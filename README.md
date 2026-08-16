@@ -56,18 +56,28 @@ property correct, so the audit comes back clean while the render stays wrong.
 
 ## Install
 
-Copy the folder into your skills directory.
+**In Claude Code, two commands:**
 
-```bash
-# available in every project
-git clone https://github.com/Principle-hl/tastebuds ~/.claude/skills/tastebuds
-
-# or scoped to one project
-git clone https://github.com/Principle-hl/tastebuds .claude/skills/tastebuds
+```
+/plugin marketplace add Principle-hl/tastebuds
+/plugin install tastebuds@tastebuds
 ```
 
-Then invoke it with `/tastebuds`, or let it trigger on its own when a task
-matches the description in the frontmatter.
+That is it. Invoke it with `/tastebuds`, or let it trigger on its own when a
+task matches its description.
+
+**Or copy the folder manually**, if you would rather not use plugins:
+
+```bash
+git clone --depth 1 https://github.com/Principle-hl/tastebuds /tmp/tastebuds-repo \
+  && cp -R /tmp/tastebuds-repo/skills/tastebuds ~/.claude/skills/ \
+  && rm -rf /tmp/tastebuds-repo
+```
+
+Use `.claude/skills/` instead of `~/.claude/skills/` to scope it to one project.
+
+**Or just read it.** `skills/tastebuds/SKILL.md` and the files in
+`skills/tastebuds/references/` are plain Markdown and work fine as a document.
 
 ## Scope
 

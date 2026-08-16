@@ -1,0 +1,16 @@
+{
+  "name": "tastebuds",
+  "owner": {
+    "name": "Principle-hl",
+    "url": "https://github.com/Principle-hl"
+  },
+  "plugins": [
+    {
+      "name": "tastebuds",
+      "source": "./",
+      "description": "Opinionated design sensibility and construction rules for web interfaces: spacing rhythm, type scale, colour, grid reflow traps, motion, copy density, phones and in-app browsers, and a pre-launch QA pass.",
+      "version": "1.0.0",
+      "skills": ["./skills/tastebuds"]
+    }
+  ]
+}
